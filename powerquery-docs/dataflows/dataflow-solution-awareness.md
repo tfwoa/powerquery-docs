@@ -124,3 +124,4 @@ For security reasons, credentials of connections used by dataflows aren't persis
 * Dataflows do not support block of unmanaged customizations. See, [Block unmanaged customizations in Dataverse environments](/power-platform/alm/block-unmanaged-customizations#known-limitations)
 * Dataflows do not support preferred solution. See, [Set a preferred solution](/power-apps/maker/data-platform/preferred-solution#limitations)
 * For dataflows to import successfully into an environment, either the environment can't be in administration mode, or background operations need to be enabled.
+* Dataflows cannot be updated by via a normal solution update process. If an update needs to be applied then the dataflow needs to be deleted in the target environment first, then import the new version of the dataflow, following the steps outlined above as if it were a brand new dataflow.
